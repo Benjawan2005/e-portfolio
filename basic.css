@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0px;
+    block-size: boder-box;
+}
+body{
+    font-family: monospace;
+    font-size: 18px;
+    color:#000;
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    background-size: cover;
+    font-family: "Mitr", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+.bgBlue{
+      background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+      color: #064889;
+}
+.bgOrange{
+      background-color: #FAD961;
+      background-image: linear-gradient(180deg, #FAD961 10%, #F76B1C 100%);
+}
+.bgSky{
+      background-color: #9ec5fe;
+        background: #9ec5fe;
+        background: linear-gradient(98deg, rgba(99, 99, 242, 1) 0%, rgba(59, 222, 255, 1) 94%);
+}
+.bgPink{
+        background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+
+}
+.bgPurple{
+      background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+}

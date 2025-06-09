@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Mitr:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+    #row1{
+      background-image: url("imageuse/Bg.JPG");
+      background-position: center;
+      background-size: cover;
+      width: 100%;   
+      height: 100vh;
+    }
+    #row1 img{
+        position: cover;
+        margin-top: 80px;
+    }
+    .text_title{
+      text-align: center;
+      font-size: 6rem;
+      list-style: none;
+      padding-left: 0;
+      font-weight: 150px;
+      margin-top: 3%;
+      color: white;
+      text-transform: lowercase;
+      text-shadow: 2px 2px 3px #585858, 4px 4px 6px #ccc;
+
+    }
+    .name{
+        text-align: center;
+        font-size: 6rem;
+        list-style: none;
+        padding-left: 0;
+        font-weight: initial;
+        margin: 0;
+        color: white;
+        text-transform: uppercase;
+        color: #ffe5f6;
+        text-shadow: 0 0 5px #fc35b6, 0 0 10px #fc4cbe, 0 0 15px #e680c2;
+
+    }
+    
+    #row2 ,#row3{
+        background-image: url(imageuse/19366.jpg);
+        background-size: cover;
+        background-position: center;
+        
+
+    }
+    #row2-1{
+
+    }
+    #row2-2{
+        background: url(imageuse/Profile1.jpg) ;
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+        display: flex;
+    }
+
+    #row3-2{
+        background: url(imageuse/Social.png);
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+        display: flex;
+    }
+    #row4{
+        background: url(imageuse/19366.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+    #row4-1 img{
+        width: auto;
+        height: 500px;
+
+    }
+    #row4-2 img{
+        width: auto;
+        height: 500px;
+    }
+    .lead{
+        font-size: 25px;
+    }
+    
+    
+    .BgProfile{
+        background-color: #d3e6fb; /* ฟ้าอ่อน */
+        padding: 5px;
+        border-radius: 20px; /* มุมโค้ง */
+        width: fit-content;
+        margin-left: 120px;
+        margin-right: auto;
+        margin-top: 15px;
+        transition: background-color 0.2s;
+    }
+    .BgProfile:hover{
+        background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+
+    }
+    
+    .BgContact{
+        background-color: #d1f0fe; /* ฟ้าอ่อน */
+        padding: 30px;
+        width: fit-content;
+        margin-left: 60px;
+        margin-right: auto;
+        margin-top: 15px;
+        
+    }
+    .BgContact1{
+        display: inline-block;
+        transition: background-color 0.2s;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 5px 10px;
+
+    }
+    
+    .BgContact1:hover{
+        background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+    }
+    .BgEdu{
+        background-color: #275ac2;
+        padding: 10px;
+        width: fit-content;
+        border-radius: 20px;
+        transition: background-color 0.2s;
+    }
+    .BgEdu:hover{
+        background-color: #8bd9fe;
+    }
+    .BgAct{
+        background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+
+        color: whitesmoke;
+        padding: 10px;
+        border-radius: 20px;
+        transition: background-color 0.2s;
+        
+    }
+
+    .education-section {
+  padding: 50px 20px;
+  background: #f9fbfe;
+  text-align: center;
+}
+
+.edu-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.edu-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.edu-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.edu-level {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#row4 {
+  background: url(imageuse/19366.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* เงานุ่ม */
+  padding: 40px 20px;
+  margin: 20px;
+
+}
+#row5 {
+  background: url(imageuse/19366.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 20px ;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* เงานุ่ม */
+  padding: 30px 50px;
+  margin: 20px auto;
+  max-width: 1480px;
+  width: 100%;
+
+}
+.btn{
+    background-color: #ff69cb;
+}
+.btn:hover{
+    background-color: #e12ea2;
+}
+@media (min-width: 992px) and (max-width: 1199px) {/*lg*/
+    .text_title{
+         font-size: 5rem;
+         margin-top: 3rem;
+    }
+    .name{
+        font-size: 6rem;
+    }
+    #row2-2,#row3-2{
+        width: 800px;
+        height: 600px;
+
+    }
+    .BgContact,.BgProfile{
+        font-size: 18px;
+    }
+    #row4-1 img,#row4-2 img{
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){ /*md*/
+    .text_title{
+         font-size: 4rem;
+         margin-top: 3rem;
+    }
+    .name{
+        font-size: 5rem;
+    }
+    #row2-2,#row3-2{
+        width: 800px;
+        height: 600px;
+
+    }
+    .BgContact,.BgProfile{
+        font-size: 21px;
+    }
+    #row4-1 img,#row4-2 img{
+        width: 500px;
+        height: 400px;
+    }
+    
+}
+@media (max-width: 767px){ /*sm*/
+        .text_title{
+            font-size: 3rem;
+            margin-top: 3rem;
+        }
+        .name{
+            font-size: 4rem;
+        }
+        #row2-2,#row3-2{
+            width: 767px;
+            height: 400px;
+
+        }
+        .BgProfile{
+            margin-left: 80px;
+        }
+        .BgContact,.BgProfile{
+            font-size: 18px;
+        }
+        #row4-1 img,#row4-2 img{
+            width: auto;
+            height: 350px;
+        }
+        .lead{
+            font-size: 20px;
+        }
+        
+    }
+        
+
+</style>
+
+</head>
+<body>
+    <div id="row1" class="col-lg-9 mx-auto g-0" align="center">
+        <div class="container animate">
+            <img src="imageuse/LogoTni.png" width="300" height="100">
+            <img src="imageuse/images-2_uid_671f081925a1d.png" width="200">
+        </div>
+        <head><p class="text_title animate"><i>E-portfolio</i></p></head><br>
+        <p class="name animate"><i>Benjawan Thanyawut</i></p>
+        
+    </div><!--row1-->
+    <div id="row2" class="row g-0 order-2 mt-3 " align="center">
+        <div class="col-lg p-5 my-auto order-2" id="row2-1" align="left">
+            <h1 class="edu-title animate" align="center">⋆˚࿔ Profile 𝜗𝜚˚⋆</h1>
+            <div class="container BgProfile-group">
+                <h3 class="mt-4 animate">╰┈➤ introduction 👩🏻‍💻🤖</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li class="BgProfile">ชื่อ-สกุล เบญจวรรณ ธัญญวุฒิ</li>
+                        <li class="BgProfile mt-2 ">Miss Benjawan Thanyawut</li>
+                        <li class="BgProfile mt-2">ชื่อเล่น (Nickname) เบล (Bell)</li>
+                        <li class="BgProfile mt-2">เกิดวันที่ (Birth) 05/05/2548 (อายุ 20 ปี)</li>
+                        <li class="BgProfile mt-2">ระดับการศึกษา กำลังศึกษาในอุดมศึกษาปีที่ 3</li>
+                        <li class="BgProfile mt-2">สิ่งที่สนใจ Web Application , Cybersecurity</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="col-lg p-5 order-1 animate" id="row2-2">
+
+        </div>
+    </div><!--end row2-->
+    <div id="row3" class="row g-0" align="center">
+        <div class="col-lg p-5 my-auto" id="row3-1" align="left">
+            <h3 class="mb-3 animate">╰┈➤ contact ☎︎</h3>
+                    <ul  class="BgContact mt-4 lead" style="list-style-type: none; padding-left: 30px;">
+                        <li class="BgContact1"><i class="fa fa-phone text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted" href="tel:0616721445">0616721445 ✧˖°</a>
+                        </li><br>
+
+                        <li class="mt-2 BgContact1"><i class="fa fa-github text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted" href="https://github.com/Benjawan2005">Benjawan2005</a>
+                        </li>
+
+                        <li class="mt-2 BgContact1"><i class="fa fa-envelope text-muted"></i> <a class="text-decoration-none text-muted" href="benjawanthanyawut@gmail.com">benjawanthanyawut@gmail.com</a>
+                        </li>
+                    </ul>
+                
+        </div>
+        <div class="col-lg p-5 animate" id="row3-2">
+
+        </div>
+
+    </div><!--end row3-->
+
+    <div id="row4" class="row g-0 justify-content-center text-center" >
+        <h1 class="edu-title mt-1 animate">「 ✦ Education ✦ 」</h1>
+        <div id="row4-1" class="col-lg p-4 my-auto" align="center">
+            <h5 class="edu-level BgEdu"><a class="text-light" href="https://saipanya.ac.th/">ระดับมัธยมศึกษาตอนปลาย</a></h5>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li class="edu-level ">✿ โรงเรียนสายปัญญา ในพระบรมราชินูปถัมภ์ ✿</li>
+                <li class="edu-ani">ห้องเรียนพิเศษวิทยาศาสตร์-คณิตศาสตร์ (GSMP)</li>
+            </ul>
+            <img src="imageuse/Saipanya.jpg" class="img-fluid rounded-4 animate">
+        </div><!--row4-1-->
+        <div id="row4-2" class="col-lg p-4" align="center">
+            <h5 class="edu-level BgEdu"><a class="text-light" href="https://www.tni.ac.th/home/teacher?gad_source=1&gad_campaignid=20566589893&gbraid=0AAAAApKPAstLQX47W4TGgtXqf1sMe7b9x&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjcoPgNYFDflLKc2p11zuWovBUrAi8bui1DoVWg1uPq9gx9kjkSj1sUaAvU6EALw_wcB">ระดับอุดมศึกษา</a></h5>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li class="edu-level" >°❀⛩️สถาบันเทคโนโลยีไทย-ญี่ปุ่น⛩️࿔*:･ </li>
+                <li class="edu-ani">คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ</li>
+            </ul>
+            <img src="imageuse/Thai-nichi.png" class="img-fluid rounded-4 animate">
+        </div>
+        
+        
+    </div><!--end row4-->
+
+    <div class="container" id="row5">
+            <div id="row5-1"  class="row" align="center">
+                <h1 class="edu-title mt-4 animate">「 ✦ Activities ✦ 」</h1>
+                    <h5 class="lead mb-3 my-3 animate" style="color: #a953fe;" align="left">╰┈➤ งานที่เข้าร่วมการแข่งขัน CTF ในปี 2024 ได้แก่</h5>
+                        <div class="col-lg mt-3 me-3 mb-3 bgBlue rounded animate">
+                                <img src="imageuse/Cert Senior THCTT24.jpg" class="img-fluid mt-3 rounded">
+                                    <h3 class="display-4 fs-2 mt-3 animate">Thailand Top Talent 2024</h3>
+                                        <div class="fs-5 mb-3 edu-ani">Team : ทีมหิวข้าว</div>
+                            </div>
+                        <div class="col-lg mt-3 mb-3 bgBlue rounded animate">
+                            <img src="imageuse/Women NSCA cert.jpg" class="img-fluid rounded mt-3">
+                                <h3 class="display-4 fs-2 mt-3 animate">Women Thailand Cyber Top Talent 2024</h3>
+                                    <div class="fs-5 mb-3 edu-ani">Team : ทีมหิวข้าว</div>
+                        </div>
+            </div><!--row5-1-->
+            <div id="row5-2" class="row" align="center">
+                <h5 class="lead mb-3 my-3 animate" style="color: #a953fe;" align="left">╰┈➤ NSCA E-LEARNING</h5>
+                    <div class="col-lg mt-3 me-3 mb-3 bgBlue rounded animate">
+                        <img src="imageuse/Train_CTF bootcamp.jpg" class="img-fluid rounded mt-3">
+                            <h3 class="display-4 fs-2 mt-3 animate">CTF BOOT CAMP</h3>
+                                <div class="fs-5 mb-3 edu-ani">เข้าร่วมการอบรมในวันที่ 24-25 พฤษภาคม 2568</div>
+                        </div>
+                    <div class="col-lg mt-3 mb-3 bgBlue rounded animate">
+                        <img src="imageuse/MOOC.jpg" class="img-fluid rounded mt-3">
+                            <h3 class="display-4 fs-2 mt-3 mb-3 animate">MOOC Basic cybersecurity</h3>
+                    </div>
+                    
+            </div><!--row5-2-->
+            <div id="row5-3"  class="Thaifont row animate" align="center">
+                    <div class="col-lg mt-3 me-3 mb-3 bgBlue rounded ">
+                        <img src="imageuse/NCSA(1)_e.jpg" class="img-fluid rounded mt-3 ">
+                            <h3 class="display-4 fs-2 mt-3 animate">Cybersecurity Foundation Course</h3>
+                                <div class="fs-5 mb-3 edu-ani">ระดับพื้นฐาน</div>
+                    </div>
+                    <div class="col-lg mt-3 mb-3 bgBlue rounded animate">
+                        <img src="imageuse/NCSA(2)_e.jpg" class="img-fluid mt-3 rounded">
+                            <h3 class="display-4 fs-2 mt-3 animate">Cybersecurity Foundation Course</h3>
+                                <div class="fs-5 mb-3 edu-ani">ระดับผู้เชี่ยวชาญ</div>
+                    </div>
+                    
+            </div><!--row5-3-->
+            <h2 class="justify-content-center text-center mt-3 edu-ani" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">⋆.˚✮ Ⓣⓗⓐⓝⓚ ⓨⓞⓤ ✮˚.⋆</h2>
+    </div><!--end row5-->
+    <footer align="center" class="my-4">
+        <a href="#" class="btn btn-primary Thaifont">กลับหน้าหลัก</a>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="animations.js"></script>
+</html>

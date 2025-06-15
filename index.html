@@ -213,6 +213,19 @@
 .btn:hover{
     background-color: #e12ea2;
 }
+.btn1{
+    background-color: #673be0;
+    border-radius: 15px;
+    padding: 7px;
+    margin-top: 25px;
+    justify-content: center;
+    border: #ffffff;
+    border: 2px solid white;
+    margin: 25px 5px;
+}
+.btn1:hover{
+    background-color:  #936cfd;
+}
 #row2{
     margin-top: 1rem;
 }
@@ -222,7 +235,7 @@
          margin-top: 3rem;
     }
     .name{
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .BgContact,.BgProfile{
         font-size: 18px;
@@ -231,14 +244,19 @@
         width: 600px;
         height: 400px;
     }
+    .btn1{
+        margin-top: 2rem;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px){ /*md*/
     .text_title{
          font-size: 4rem;
-         margin-top: 3rem;
+         margin-top: 2rem;
+         margin-bottom: 0;
     }
     .name{
-        font-size: 5rem;
+        font-size: 70px;
+        margin-top: 1rem;
     }
     .BgContact,.BgProfile{
         font-size: 21px;
@@ -246,6 +264,9 @@
     #row4-1 img,#row4-2 img{
         width: 500px;
         height: 400px;
+    }
+    .btn1{
+        margin-top: 1rem;
     }
     
 }
@@ -294,7 +315,7 @@
         }
         #row4-1 img,#row4-2 img{
             width: auto;
-            height: 350px;
+            height: 290px;
         }
         .lead{
             font-size: 18px;
@@ -307,6 +328,9 @@
         }
         .edu-title{
             font-size: 26px;
+        }
+        .nameSh{
+            font-size: 16px;
         }
     }
         
@@ -322,14 +346,25 @@
         </div>
         <head><p class="text_title animate"><i>E-portfolio</i></p></head><br>
         <p class="name animate"><i>Benjawan Thanyawut</i></p>
-        
+        <div class="container animate">
+            <button class="btn1 btn-lg" type="button"><a class="text-decoration-none text-white" href="#row2-1">
+                Profile
+            </a></button>
+            <button class="btn1 btn-lg" type="button"><a class="text-decoration-none text-white" href="#row4">
+                Education
+            </a></button>
+            <button class="btn1 btn-lg" type="button"><a class="text-decoration-none text-white" href="#row5-1">
+                Activities
+            </a></button>
+        </div>
     </div><!--row1-->
+
     <div id="row2" class="row g-0 order-2" align="center">
         <div class="col-lg p-5 my-auto order-2" id="row2-1" align="left">
             <h1 class="edu-title animate" align="center">⋆˚࿔ Profile 𝜗𝜚˚⋆</h1>
             <div class="container BgProfile-group">
                 <h3 class="mt-4 animate">╰┈➤ introduction 👩🏻‍💻🤖</h3>
-                    <ul style="list-style-type: none; padding-left: 0;">
+                    <ul class="text-muted" style="list-style-type: none; padding-left: 0;">
                         <li class="BgProfile">ชื่อ-สกุล เบญจวรรณ ธัญญวุฒิ</li>
                         <li class="BgProfile mt-2 ">Miss Benjawan Thanyawut</li>
                         <li class="BgProfile mt-2">ชื่อเล่น (Nickname) เบล (Bell)</li>
@@ -347,13 +382,13 @@
         <div class="col-lg p-5 my-auto" id="row3-1" align="left">
             <h3 class="mb-3 animate">╰┈➤ contact ☎︎</h3>
                     <ul  class="BgContact mt-4 lead" style="list-style-type: none; padding-left: 30px;">
-                        <li class="BgContact1"><i class="fa fa-phone text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted" href="tel:0616721445">0616721445 ✧˖°</a>
+                        <li class="BgContact1" onclick="copy()"><i class="fa fa-phone text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted">0616721445 ✧˖°</a>
                         </li><br>
 
                         <li class="mt-2 BgContact1"><i class="fa fa-github text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted" href="https://github.com/Benjawan2005">Benjawan2005</a>
                         </li><br>
 
-                        <li class="mt-2 BgContact1"><i class="fa fa-envelope text-muted" style="font-size:20px"></i> <a class="text-decoration-none text-muted" id="gmail" href="benjawanthanyawut@gmail.com">benjawanthanyawut@gmail.com</a>
+                        <li class="mt-2 BgContact1" onclick="copy()"><i class="fa fa-envelope text-muted" style="font-size:20px"></i> <a class="text-decoration-none text-muted" id="gmail">benjawanthanyawut@gmail.com</a>
                         </li>
                     </ul>
                 
@@ -369,7 +404,7 @@
         <div id="row4-1" class="col-lg p-4 my-auto" align="center">
             <h5 class="edu-level BgEdu"><a class="text-light" href="https://saipanya.ac.th/">ระดับมัธยมศึกษาตอนปลาย</a></h5>
             <ul style="list-style-type: none; padding-left: 0;">
-                <li class="edu-level ">✿ โรงเรียนสายปัญญา ในพระบรมราชินูปถัมภ์ ✿</li>
+                <li class="edu-level nameSh">✿ โรงเรียนสายปัญญา ในพระบรมราชินูปถัมภ์ ✿</li>
                 <li class="edu-ani">ห้องเรียนพิเศษวิทยาศาสตร์-คณิตศาสตร์ (GSMP)</li>
             </ul>
             <img src="imageuse/Saipanya.jpg" class="img-fluid rounded-4 animate">
@@ -377,7 +412,7 @@
         <div id="row4-2" class="col-lg p-4" align="center">
             <h5 class="edu-level BgEdu"><a class="text-light" href="https://www.tni.ac.th/home/teacher?gad_source=1&gad_campaignid=20566589893&gbraid=0AAAAApKPAstLQX47W4TGgtXqf1sMe7b9x&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjcoPgNYFDflLKc2p11zuWovBUrAi8bui1DoVWg1uPq9gx9kjkSj1sUaAvU6EALw_wcB">ระดับอุดมศึกษา</a></h5>
             <ul style="list-style-type: none; padding-left: 0;">
-                <li class="edu-level" >°❀⛩️สถาบันเทคโนโลยีไทย-ญี่ปุ่น⛩️࿔*:･ </li>
+                <li class="edu-level nameSh" >°❀⛩️สถาบันเทคโนโลยีไทย-ญี่ปุ่น⛩️࿔*:･ </li>
                 <li class="edu-ani">คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ</li>
             </ul>
             <img src="imageuse/Thai-nichi.png" class="img-fluid rounded-4 animate">
@@ -432,7 +467,18 @@
     <footer align="center" class="my-4">
         <a href="#" class="btn btn-primary Thaifont">กลับหน้าหลัก</a>
     </footer>
+    
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  function copy() {
+    const text = "ข้อความที่ต้องการคัดลอก";
+    navigator.clipboard.writeText(text).then(function() {
+      alert("คัดลอกแล้ว!");
+    }, function(err) {
+      alert("ไม่สามารถคัดลอกได้: ", err);
+    });
+  }
+</script>
 <script src="animations.js"></script>
 </html>

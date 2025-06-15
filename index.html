@@ -213,6 +213,9 @@
 .btn:hover{
     background-color: #e12ea2;
 }
+#row2{
+    margin-top: 1rem;
+}
 @media (min-width: 992px) and (max-width: 1199px) {/*lg*/
     .text_title{
          font-size: 5rem;
@@ -220,11 +223,6 @@
     }
     .name{
         font-size: 6rem;
-    }
-    #row2-2,#row3-2{
-        width: 800px;
-        height: 600px;
-
     }
     .BgContact,.BgProfile{
         font-size: 18px;
@@ -242,11 +240,6 @@
     .name{
         font-size: 5rem;
     }
-    #row2-2,#row3-2{
-        width: 800px;
-        height: 600px;
-
-    }
     .BgContact,.BgProfile{
         font-size: 21px;
     }
@@ -257,32 +250,64 @@
     
 }
 @media (max-width: 767px){ /*sm*/
+        #row1{
+            height: 650px;
+        }
+        #row1 img{
+            margin-top: 50px;
+        }
+        .img1{
+            height: 75px;
+            width: 220px;
+        }
+        .img2{
+            height: 80px;
+            width: 200px;
+        }
         .text_title{
             font-size: 3rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
         .name{
-            font-size: 4rem;
-        }
-        #row2-2,#row3-2{
-            width: 767px;
-            height: 400px;
-
+            font-size: 3rem;
+            margin-top: 0;
         }
         .BgProfile{
-            margin-left: 80px;
+            margin-left: 10px;
+            padding: 10px;
+        }
+        .BgContact1{
+            margin: 0px;
+            font-size: 14px;
+        }
+        .BgContact{
+            margin: 0 auto;
+            width: 280px;
+            background-position: left;
+            padding: 15px;
         }
         .BgContact,.BgProfile{
-            font-size: 18px;
+            font-size: 14px;
+        }
+        #gmail{
+            font-size: 12px;
         }
         #row4-1 img,#row4-2 img{
             width: auto;
             height: 350px;
         }
         .lead{
-            font-size: 20px;
+            font-size: 18px;
         }
-        
+        .BgProfile-group h3{
+            font-size: 21px;
+        }
+        #row2{
+            margin-top: 0;
+        }
+        .edu-title{
+            font-size: 26px;
+        }
     }
         
 
@@ -292,14 +317,14 @@
 <body>
     <div id="row1" class="col-lg-9 mx-auto g-0" align="center">
         <div class="container animate">
-            <img src="imageuse/LogoTni.png" width="300" height="100">
-            <img src="imageuse/images-2_uid_671f081925a1d.png" width="200">
+            <img class="img1" src="imageuse/LogoTni.png" width="300" height="100">
+            <img class="img2" src="imageuse/images-2_uid_671f081925a1d.png" width="200">
         </div>
         <head><p class="text_title animate"><i>E-portfolio</i></p></head><br>
         <p class="name animate"><i>Benjawan Thanyawut</i></p>
         
     </div><!--row1-->
-    <div id="row2" class="row g-0 order-2 mt-3 " align="center">
+    <div id="row2" class="row g-0 order-2" align="center">
         <div class="col-lg p-5 my-auto order-2" id="row2-1" align="left">
             <h1 class="edu-title animate" align="center">⋆˚࿔ Profile 𝜗𝜚˚⋆</h1>
             <div class="container BgProfile-group">
@@ -326,9 +351,9 @@
                         </li><br>
 
                         <li class="mt-2 BgContact1"><i class="fa fa-github text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted" href="https://github.com/Benjawan2005">Benjawan2005</a>
-                        </li>
+                        </li><br>
 
-                        <li class="mt-2 BgContact1"><i class="fa fa-envelope text-muted"></i> <a class="text-decoration-none text-muted" href="benjawanthanyawut@gmail.com">benjawanthanyawut@gmail.com</a>
+                        <li class="mt-2 BgContact1"><i class="fa fa-envelope text-muted" style="font-size:20px"></i> <a class="text-decoration-none text-muted" id="gmail" href="benjawanthanyawut@gmail.com">benjawanthanyawut@gmail.com</a>
                         </li>
                     </ul>
                 

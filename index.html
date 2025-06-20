@@ -333,6 +333,11 @@
             font-size: 16px;
         }
     }
+    #row0 img{
+        height: 50px;
+        width: auto;
+    }
+    
         
 
 </style>
@@ -371,6 +376,14 @@
                         <li class="BgProfile mt-2">เกิดวันที่ (Birth) 05/05/2548 (อายุ 20 ปี)</li>
                         <li class="BgProfile mt-2">ระดับการศึกษา กำลังศึกษาในอุดมศึกษาปีที่ 3</li>
                         <li class="BgProfile mt-2">สิ่งที่สนใจ Web Application , Cybersecurity</li>
+                        <li class="BgProfile mt-2">Programming Languages
+                            <div class="container col-lg animate" id="row0">
+                                <img src="imageuse/java.webp">
+                                <img src="imageuse/HTML-CSS.png">
+                                <img src="imageuse/php.png">
+                                <img src="imageuse/icons8-c-sharp-logo-64.png">
+                            </div>
+                        </li>
                     </ul>
             </div>
         </div>
@@ -382,13 +395,17 @@
         <div class="col-lg p-5 my-auto" id="row3-1" align="left">
             <h3 class="mb-3 animate">╰┈➤ contact ☎︎</h3>
                     <ul  class="BgContact mt-4 lead" style="list-style-type: none; padding-left: 30px;">
-                        <li class="BgContact1" onclick="copy()"><i class="fa fa-phone text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted">0616721445 ✧˖°</a>
+                        <li class="BgContact1">
+                            <i class="fa fa-phone text-muted" style="font-size:24px"></i>
+                            <a href="#" class="text-decoration-none text-muted" data-copy="0616721445" onclick="copyText(event, this)">0616721445 ✧˖°</a>
                         </li><br>
 
                         <li class="mt-2 BgContact1"><i class="fa fa-github text-muted" style="font-size:24px"></i> <a class="text-decoration-none text-muted" href="https://github.com/Benjawan2005">Benjawan2005</a>
                         </li><br>
 
-                        <li class="mt-2 BgContact1" onclick="copy()"><i class="fa fa-envelope text-muted" style="font-size:20px"></i> <a class="text-decoration-none text-muted" id="gmail">benjawanthanyawut@gmail.com</a>
+                        <li class="BgContact1">
+                            <i class="fa fa-envelope text-muted" style="font-size:20px"></i>
+                            <a href="#" class="text-decoration-none text-muted" data-copy="benjawanthanyawut@gmail.com" onclick="copyText(event, this)">benjawanthanyawut@gmail.com</a>
                         </li>
                     </ul>
                 
@@ -471,14 +488,17 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script>
-  function copy() {
-    const text = "ข้อความที่ต้องการคัดลอก";
+  function copyText(event, element) {
+    event.preventDefault();
+    const text = element.getAttribute("data-copy");
     navigator.clipboard.writeText(text).then(function() {
-      alert("คัดลอกแล้ว!");
+      alert("คัดลอกแล้ว: " + text);
     }, function(err) {
-      alert("ไม่สามารถคัดลอกได้: ", err);
+      alert("ไม่สามารถคัดลอกได้: " + err);
     });
   }
 </script>
+
+
 <script src="animations.js"></script>
 </html>
